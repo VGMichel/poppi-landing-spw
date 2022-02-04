@@ -1,0 +1,217 @@
+/* POPPI SHOP LANDING PAGE*/
+
+/* Import Google Fonts - Roboto, Reem Kufi, Indie Flower and Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Comfortaa:wght@300;400;500;600&display=swap');
+
+/* Import Font Awesome for Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Import Animate.css library */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css");
+
+
+:root {
+  /* Colors */
+  --light-pink: #fde1eb;
+  --hot-pink: #ff699f;
+  --medium-pink: #ffa1c3;
+  --black-color: #242424;
+  --white-color: #ffffff;
+
+  /* Fonts */
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Comfortaa', sans-serif;
+
+  /* Font Sizes */
+    --base-font-size: 100%;
+  /*  --fluid-typography-ratio: 0.5;
+    --rem: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1vw);
+    font-size: var(--rem); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-pink);
+    color: var(--black-color);
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    min-height: 723px;
+    transition: 0.25s;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+}
+
+
+/************* START NAVIGATION *************/
+header {
+    background-color: #FFF;
+    padding: 25px;
+    border-radius: 55px 55px 0 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+header nav .nav-items {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    padding: 15px 10px;
+}
+
+header nav .nav-items .item {
+    display: block;
+    margin: 0 10px;
+}
+
+header nav .nav-items .item a[data-switcher] {
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: 0.3s;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header nav .nav-items .item:hover a[data-switcher] {
+    background-color: var(--black-color);
+    color: #fff;
+}
+
+        header nav .nav-items .item:last-child:hover a[data-switcher] {
+            background-color: transparent;
+            color: #fff;
+        }
+
+header nav .nav-items .item.is-active a[data-switcher] {
+    background-color: var(--medium-pink);
+    color: #fff;
+    font-weight: 700;
+}
+        header nav .nav-items .item.is-active:last-child a[data-switcher] {
+            background-color: transparent;
+        }
+
+main {
+    width: 100%;
+    max-width: 1300px;
+    height: 795px;
+}
+    .main-nav i {
+        display: none;
+    }
+
+
+.heart-logo {
+    width: 100%;
+    max-width: 24px;
+    position: absolute;
+    top: 28%;
+    right: 7%;
+}
+
+.logo {
+    width: 250px;
+}
+/************* END NAVIGATION *************/
+
+
+.pages {
+    padding: 0 80px 80px;
+    border-radius: 0 0 55px 55px;
+    background-color: #FFF;
+}
+
+.pages .page {
+    display: none;
+}
+
+.pages .page.is-active {
+    display: block;
+}
+
+
+    /*****    CONTENT    *****/
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 500px;
+        /*overflow: hidden;*/
+        width: calc (100% - 100px);
+      }
+
+              .left-flex img {
+                max-width: 100%;
+                width: 700px;
+                height: auto;
+              }
+
+          .right-flex {
+            margin: 0 27px;
+            text-align: center;
+          }
+
+              .title {
+                font-size: 2.44em;
+                font-weight: 700;
+                color: var(--hot-pink);
+                padding: 10px 0;
+              }
+              .front-page-description {
+                font-family: var(--secondary-font);
+                font-size: 1.5em;
+              }
+                  .front-page-description p {
+                    padding: 10px 0;
+                  }
+
+              .social-media a {
+                display: inline-flex;
+                padding: 40px 0 0;
+                margin-right: 20px;
+                color: var(--black-color);
+                transition: 0.3s;
+              }
+                  .social-media a:hover {
+                    color: var(--medium-pink);
+                  }
+
+              .social-media i {
+                margin-right: 10px;
+              }
+
+              .social-media p {
+                display: flex;
+                align-items: center;
+                font-size: 1.4em;
+                font-weight: 700;
+              }
+
+          /***** FOOTER *****/
+          .footer {
+            margin: 20px 0 0;
+          }
