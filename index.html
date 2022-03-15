@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/characters.css">
     <link rel="stylesheet" href="assets/icon.css">
+    <link rel="stylesheet" href="assets/contact-form.css">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -155,12 +156,24 @@
 
                     <!-- ******* CONTACT PAGE ****** -->
                     <div class="page" data-page="3">
-                        <h2>Page 3</h2>
-                        <p>Welcome to the services page</p>
+                        <div class="container">
+                            <h3>Contact Form</h3>
+                            <form action="/contact-form.php" class="contact">
+                                <label for="email" class="input-title">Email</label>
+                                <input type="email" name="email" placeholder="name@email.com">
+                        
+                                <label for="subject" class="input-title">Message</label>
+                                <textarea name="subject" name="subject" placeholder="Message..." cols="30" rows="8"></textarea>
+                        
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
                     </div>
+
+
                     <div class="page" data-page="4">
                         <h2>Page 4</h2>
-                        <p>Welcome to the contact page</p>
+                        <p>Welcome to the fan submission page</p>
                     </div>
                 </section>
                 <!-- FOOTER -->
