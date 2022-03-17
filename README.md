@@ -1,3 +1,6 @@
+## Landing Page for Poppi Shop
+Landing page for upcoming eCommerce
+
 ## License
 
     Copyright [Valerie Michel]
